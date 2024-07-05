@@ -13,41 +13,37 @@ import Snackbar from "@mui/material/Snackbar";
 import emailjs from "@emailjs/browser";
 
 const main = forwardRef(() => {
-  const [sucess, setSucess] = useState(false)
-  const form = useRef()
+  const [sucess, setSucess] = useState(false);
+  const form = useRef();
 
   function successalert() {
     setSucess(true);
     setTimeout(() => setSucess(false), 5000);
   }
 
-  
   const formP = (e) => {
     e.preventDefault();
-    const email = document.getElementById("email")
-    const name = document.getElementById("name")
-    const subject = document.getElementById("subject")
-    const textarea = document.getElementById("textarea")
-    
+    const email = document.getElementById("email");
+    const name = document.getElementById("name");
+    const subject = document.getElementById("subject");
+    const textarea = document.getElementById("textarea");
+
     emailjs
       .sendForm("service_72v1hmm", "template_s161b47", form.current, {
         publicKey: "yaAlYmVN6AUTSRpM3",
       })
-      .then(
-        () => {
-          setSucess(true)
-        })
-      .catch((error) => {
-        console.log('Error', error.txt)
+      .then(() => {
+        setSucess(true);
       })
+      .catch((error) => {
+        console.log("Error", error.txt);
+      });
 
     email.value = "";
     name.value = "";
     subject.value = "";
     textarea.value = "";
   };
-
- 
 
   return (
     <div>
@@ -164,7 +160,7 @@ const main = forwardRef(() => {
           </div>
           <div className="mt-5 sm:grid grid-rows-3 grid-flow-col w-full p-0 md:gap-5">
             <a href="https://harii10.github.io/landing-page/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 md:m-3">
+              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
                 <img src="images/landing.png" className="" />
                 <ul className="flex gap-5 my-3">
                   <li className="text-chose-10 p-1 px-3">HTML</li>
@@ -179,7 +175,7 @@ const main = forwardRef(() => {
             </a>
 
             <a href="https://chandru070.github.io/task-3/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 md:m-3">
+              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
                 <img src="images/task.png" className="" />
                 <ul className="flex gap-5 my-3">
                   <li className="text-chose-10 p-1 px-3">HTML</li>
@@ -195,7 +191,7 @@ const main = forwardRef(() => {
             </a>
 
             <a href="https://hberlin07.github.io/Text-Speaker/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 md:m-3">
+              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
                 <img src="images/text-speaker.png" className="" />
                 <ul className="flex gap-5 my-3">
                   <li className="text-chose-10 p-1 px-3">HTML</li>
@@ -210,7 +206,7 @@ const main = forwardRef(() => {
             </a>
 
             <a href="https://harii10.github.io/weather-app/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 md:m-3">
+              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
                 <img src="images/weather-i.png" className="" />
                 <ul className="flex gap-5 my-3">
                   <li className="text-chose-10 p-1 px-3">React</li>
@@ -228,7 +224,7 @@ const main = forwardRef(() => {
             </a>
 
             <a href="https://chandru070.github.io/task-2/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 md:m-3">
+              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
                 <img src="images/head.png" className="" />
                 <ul className="flex gap-5 my-3">
                   <li className="text-chose-10 p-1 px-3">React</li>
@@ -246,7 +242,7 @@ const main = forwardRef(() => {
             </a>
 
             <a href="https://denay.netlify.app/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 md:m-3">
+              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
                 <img src="images/weather-2.png" className="" />
                 <ul className="flex gap-5 my-3">
                   <li className="text-chose-10 p-1 px-3">React</li>
@@ -284,22 +280,26 @@ const main = forwardRef(() => {
             <input
               className="w-full p-3 mt-3 rounded-md bg-transparent border border-chose-60 outline-none lg:p-5"
               placeholder="Your Email"
-              id="email" required
+              id="email"
+              required
             />
             <input
               className="w-full p-3 mt-3 rounded-md bg-transparent border border-chose-60 outline-none lg:p-5"
               placeholder="Your Name"
-              id="name" required
+              id="name"
+              required
             />
             <input
               className="w-full p-3 mt-3 rounded-md bg-transparent border border-chose-60 outline-none lg:p-5"
               placeholder="Subject"
-              id="subject" required
+              id="subject"
+              required
             />
             <textarea
               className="w-full p-3 mt-3 rounded-md bg-transparent border border-chose-60 outline-none lg:p-5"
               placeholder="Message"
-              id="textarea" required
+              id="textarea"
+              required
             />
             <button className=" bg-chose-10 text-chose-20 rounded-lg font-bold text-xl p-3 w-full mt-3 lg:hover:bg-chose-20 hover:border border-chose-10 lg:hover:text-white xl:hover:bg-chose-20 xl:hover:border xl:border-chose-10 xl:hover:text-white 2xl:hover:bg-chose-20 2xl:hover:border 2xl:border-chose-10 2xl:hover:text-white">
               Send
