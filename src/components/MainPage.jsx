@@ -168,8 +168,7 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">Music Intruments</h4>
                 <p className="text-chose-50">
-                  This is a responsive instrument landing page. I created as a
-                  beginner front end developer.
+                This is a ultimate destination for audiophiles and music enthusiasts. Combining sleek design with exceptional sound quality.
                 </p>
               </div>
             </a>
@@ -184,8 +183,7 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">To DO List</h4>
                 <p className="text-chose-50">
-                  This is a responsive instrument landing page. I created as a
-                  beginner front end developer.
+                This app provides a clean and user-friendly interface for organizing your daily activities. It help you manage your tasks efficiently. 
                 </p>
               </div>
             </a>
@@ -199,8 +197,7 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">Text Speaker</h4>
                 <p className="text-chose-50">
-                  This is a responsive instrument landing page. I created as a
-                  beginner front end developer.
+                The converts the written text into spoken words. Offers a simple yet powerful interface for text-to-speech functionality. 
                 </p>
               </div>
             </a>
@@ -216,9 +213,7 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">Weather Application</h4>
                 <p className="text-chose-50">
-                  This is a responsive Weather Application is a modern,
-                  responsive web app designed to provide users with up-to-date
-                  weather information.
+                This shows the weather information and forecast of the current location. Designed to provide users with up-to-date weather information with. 
                 </p>
               </div>
             </a>
@@ -227,16 +222,12 @@ const main = forwardRef(() => {
               <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
                 <img src="images/head.png" className="" />
                 <ul className="flex gap-5 my-3">
-                  <li className="text-chose-10 p-1 px-3">React</li>
-                  <li className="text-chose-10 p-1 px-3">Tailwindcss</li>
-                  <li className="text-chose-10 p-1 px-3">API</li>
-                  {/* <li className='border p-1 px-3'>Material UI</li> */}
+                  <li className="text-chose-10 p-1 px-3">HTML</li>
+                  <li className="text-chose-10 p-1 px-3">CSS</li>
                 </ul>
                 <h4 className="my-2 font-semibold">Headphones</h4>
                 <p className="text-chose-50">
-                  This is a responsive Weather Application is a modern,
-                  responsive web app designed to provide users with up-to-date
-                  weather information.
+                Our Headphones Landing Page showcases the latest in audio technology, combining sleek design with exceptional sound quality. 
                 </p>
               </div>
             </a>
@@ -251,8 +242,7 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">Weather </h4>
                 <p className="text-chose-50">
-                  This is a responsive instrument landing page. I created as a
-                  beginner front end developer.
+                Users can search for weather information by city name. Auto-suggestions and autocomplete functionality enhance the search experience.
                 </p>
               </div>
             </a>
