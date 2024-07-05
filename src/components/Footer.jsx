@@ -23,10 +23,10 @@ function Footer() {
         
         <div className='py-5'>
           <ul className='flex justify-center space-x-12'>
-            <li className="hover:text-chose-10"><FaPhoneAlt /></li>
+            <a  href='tel:6379940593'><li className="hover:text-chose-10"><FaPhoneAlt /></li></a>
             <li className="hover:text-chose-10"><MdEmail /></li>
             <a href="https://www.linkedin.com/in/hariharachandru-front-end-developer/"><li className="hover:text-chose-10"><FaLinkedin /></li></a>
-            <li className="hover:text-chose-10"><FaWhatsapp/></li>
+            <a href='https://wa.link/9ikyi4/'><li className="hover:text-chose-10"><FaWhatsapp/></li></a>
             <a href="https://github.com/Harii10"><li className="hover:text-chose-10"><FaGithub/></li></a>
           </ul>
         </div>

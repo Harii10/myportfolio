@@ -75,10 +75,10 @@ const Header = ({value, onChange}) => {
               href='#projects'
             />
             <BottomNavigationAction
-              label="Education"
+              label="Contact Me"
               sx={{ color: "#ffff" }}
               value='education'
-              href='#education'
+              href='#contact'
             />
           </BottomNavigation>
         </Box>

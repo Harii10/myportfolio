@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import ScrollTop from "./ScroolTop"
+import ScrollTop from "./ScroolTop";
 import { forwardRef } from "react";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
@@ -10,52 +10,49 @@ import { SiTailwindcss } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { SiBootstrap } from "react-icons/si";
 import Snackbar from "@mui/material/Snackbar";
+import emailjs from "@emailjs/browser";
 
-const main = forwardRef(({ onRef }) => {
-  const [erAlert, setErAlert] = useState(false);
-  const [sucess, setSucess] = useState(false);
-
-  const formP = (e) => {
-    e.preventDefault();
-  };
-
-  function Erroralerts() {
-    setErAlert(true);
-    setTimeout(() => setErAlert(false), 5000);
-  }
+const main = forwardRef(() => {
+  const [sucess, setSucess] = useState(false)
+  const form = useRef()
 
   function successalert() {
     setSucess(true);
     setTimeout(() => setSucess(false), 5000);
   }
 
-  const formValidation = (e) => {
-    const email = document.getElementById("email");
-    const name = document.getElementById("name");
-    const subject = document.getElementById("subject");
-    const textarea = document.getElementById("textarea");
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  const formP = (e) => {
     e.preventDefault();
-    if (email.value === "" || name.value === "" || subject.value === "") {
-      Erroralerts();
-    }
-    if (!emailRegex.test(email.value)) {
-      Erroralerts();
-    }
-    if (textarea.value === "") {
-      Erroralerts();
-    } else {
-      successalert();
-    }
+    const email = document.getElementById("email")
+    const name = document.getElementById("name")
+    const subject = document.getElementById("subject")
+    const textarea = document.getElementById("textarea")
+    
+    emailjs
+      .sendForm("service_72v1hmm", "template_s161b47", form.current, {
+        publicKey: "yaAlYmVN6AUTSRpM3",
+      })
+      .then(
+        () => {
+          setSucess(true)
+        })
+      .catch((error) => {
+        console.log('Error', error.txt)
+      })
+
     email.value = "";
     name.value = "";
     subject.value = "";
     textarea.value = "";
   };
+
+ 
+
   return (
     <div>
-    <div>
-        <ScrollTop/>
+      <div>
+        <ScrollTop />
       </div>
       <section id="home" className="section">
         <div className="flex flex-col-reverse mt-8 lg:flex lg:flex-row justify-between lg:mt-28 ">
@@ -153,7 +150,7 @@ const main = forwardRef(({ onRef }) => {
           </div>
         </div>
       </section>
-      
+
       <section id="projects" className="section">
         <div className="mt-24 lg:mt-32 lg:p-10">
           <div className="flex flex-col justify-center items-center">
@@ -266,113 +263,19 @@ const main = forwardRef(({ onRef }) => {
           </div>
         </div>
       </section>
-      {/* <section id="education" className="mt-24 lg:mt-32 lg:p-10">
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="font-semibold tracking-wider text-4xl">Education</h1>
-          <p className="flex font-light text-chose-50 m-8 mt-8 lg:text-xl">
-            My education has been a journey of self-discovery and growth. My
-            educational details are as follows
-          </p>
-        </div>
-        <div class="mx-auto p-3">
-          <details class="open:bg-white dark:open:bg-slate-900 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-3 rounded-lg border border-chose-10 sm:w-full">
-            <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
-              <ul className="my-1">
-                <li className="font-extrabold text-lg">
-                  SKR Engineering College
-                </li>
-                <li className="text-xs text-chose-50">
-                  BTech - Information Technology
-                </li>
-                <li className="text-xs text-chose-50">2018- 2022</li>
-                <li className="text-xs text-chose-50 mt-2">
-                  <span className="font-semibold">Grade</span> : 7.46 CGPA
-                </li>
-              </ul>
-            </summary>
-            <div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
-              <p>
-                As an IT graduate, I possess strong problem-solving and
-                precision skills. My academic journey has equipped me with a
-                diverse skill set in programming. My college experience has
-                equipped me to bridge the worlds of engineering and IT, applying
-                efficiency and innovation to both realms, making me a versatile
-                professional.
-              </p>
-            </div>
-          </details>
-        </div>
-
-        <div class="mx-auto p-3">
-          <details class="open:bg-white dark:open:bg-slate-900 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-3 rounded-lg border border-chose-10 sm:w-full">
-            <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
-              <ul className="my-1">
-                <li className=" font-extrabold text-lg">
-                  Jaya Matric Higher Secondary School
-                </li>
-                <li className=" text-xs text-chose-50">
-                  HSC - XII(std) (Computer Science)
-                </li>
-                <li className=" text-xs text-chose-50">2016 - 2017</li>
-                <li className=" text-xs text-chose-50 mt-1">
-                  <span className="font-semibold">Grade</span> :60%
-                </li>
-              </ul>
-            </summary>
-            <div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
-              <p className="text-sm">
-                I've embraced a dynamic academic journey. Through my dedication
-                and adaptability, I've knowledge and practical skills in
-                computing, preparing me for future challenges and opportunities.
-              </p>
-            </div>
-          </details>
-        </div>
-
-        <div class="mx-auto p-3">
-          <details class="open:bg-white dark:open:bg-slate-900 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-3 rounded-lg border border-chose-10 sm:w-full">
-            <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
-              <ul className="my-1">
-                <li className="font-extrabold text-lg">
-                  Jaigopal Garodia Vivekananda Vidyalaya (CBSE)
-                </li>
-                <li className="text-xs text-chose-50">SSLC - Xth(std)</li>
-                <li className="text-xs text-chose-50">2014 - 2015</li>
-                <li className="text-xs text-chose-50 mt-2">
-                  <span className="font-semibold">Grade</span> 68%
-                </li>
-              </ul>
-            </summary>
-            <div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
-              <p>
-                The mug is round. The jar is round. They should call it
-                Roundtine.
-              </p>
-            </div>
-          </details>
-        </div>
-      </section> */}
       <section className="mt-20 lg:mt-32 lg:p-10" id="contact">
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-semibold tracking-wider text-4xl">Contact Me</h1>
         </div>
         <div className="m-5 p-7 bg-chose-20 shadow-black shadow-2xl  rounded-md sm:m-11 md:mx-36 mt-8 2xl:mx-72 2xl:p-9">
           <h3 className="font-medium text-lg">Email Me</h3>
-          <form onSubmit={formP}>
+          <form ref={form} onSubmit={formP}>
             <div>
-              {erAlert && (
-                <Snackbar
-                  open={erAlert}
-                  autoHideDuration={2000}
-                  onClose={Erroralerts}
-                  message="Error"
-                />
-              )}
               {sucess && (
                 <Snackbar
                   open={sucess}
                   autoHideDuration={2000}
-                  onClose={Erroralerts}
+                  onClose={successalert}
                   message="Message Sent!"
                 />
               )}
@@ -381,28 +284,25 @@ const main = forwardRef(({ onRef }) => {
             <input
               className="w-full p-3 mt-3 rounded-md bg-transparent border border-chose-60 outline-none lg:p-5"
               placeholder="Your Email"
-              id="email"
+              id="email" required
             />
             <input
               className="w-full p-3 mt-3 rounded-md bg-transparent border border-chose-60 outline-none lg:p-5"
               placeholder="Your Name"
-              id="name"
+              id="name" required
             />
             <input
               className="w-full p-3 mt-3 rounded-md bg-transparent border border-chose-60 outline-none lg:p-5"
               placeholder="Subject"
-              id="subject"
+              id="subject" required
             />
             <textarea
               className="w-full p-3 mt-3 rounded-md bg-transparent border border-chose-60 outline-none lg:p-5"
               placeholder="Message"
-              id="textarea"
+              id="textarea" required
             />
-            <button
-              className=" bg-chose-10 text-chose-20 rounded-lg font-bold text-xl p-3 w-full mt-3 lg:hover:bg-chose-20 hover:border border-chose-10 lg:hover:text-white xl:hover:bg-chose-20 xl:hover:border xl:border-chose-10 xl:hover:text-white 2xl:hover:bg-chose-20 2xl:hover:border 2xl:border-chose-10 2xl:hover:text-white"
-              onClick={formValidation}
-            >
-              Submit
+            <button className=" bg-chose-10 text-chose-20 rounded-lg font-bold text-xl p-3 w-full mt-3 lg:hover:bg-chose-20 hover:border border-chose-10 lg:hover:text-white xl:hover:bg-chose-20 xl:hover:border xl:border-chose-10 xl:hover:text-white 2xl:hover:bg-chose-20 2xl:hover:border 2xl:border-chose-10 2xl:hover:text-white">
+              Send
             </button>
           </form>
         </div>
