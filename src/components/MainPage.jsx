@@ -76,9 +76,11 @@ const main = forwardRef(() => {
       </section>
 
       <div className="flex justify-center items-center lg:flex lg:justify-start p-3 lg:p-10 lg:pl-24 lg:-mt-9">
-        <button className="bg-chose-10 text-chose-20 rounded-lg font-bold text-xl p-3 lg:hover:bg-chose-20 hover:border border-chose-10 lg:hover:text-white xl:hover:bg-chose-20 xl:hover:border xl:border-chose-10 xl:hover:text-white 2xl:hover:bg-chose-20 2xl:hover:border 2xl:border-chose-10 2xl:hover:text-white">
-          Check Resume
-        </button>
+        <a href="https://drive.google.com/file/d/1Lygj45O2Ln96H1mtnQXxlNrrr3VPpieT/view?usp=drive_link">
+          <button className="bg-chose-10 text-chose-20 rounded-lg font-bold text-xl p-3 lg:hover:bg-chose-20 hover:border border-chose-10 lg:hover:text-white xl:hover:bg-chose-20 xl:hover:border xl:border-chose-10 xl:hover:text-white 2xl:hover:bg-chose-20 2xl:hover:border 2xl:border-chose-10 2xl:hover:text-white">
+            Check Resume
+          </button>
+        </a>
       </div>
 
       <section className="section" id="skill">
@@ -168,7 +170,9 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">Music Intruments</h4>
                 <p className="text-chose-50">
-                This is a ultimate destination for audiophiles and music enthusiasts. Combining sleek design with exceptional sound quality.
+                  This is a ultimate destination for audiophiles and music
+                  enthusiasts. Combining sleek design with exceptional sound
+                  quality.
                 </p>
               </div>
             </a>
@@ -183,7 +187,9 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">To DO List</h4>
                 <p className="text-chose-50">
-                This app provides a clean and user-friendly interface for organizing your daily activities. It help you manage your tasks efficiently. 
+                  This app provides a clean and user-friendly interface for
+                  organizing your daily activities. It help you manage your
+                  tasks efficiently.
                 </p>
               </div>
             </a>
@@ -197,7 +203,9 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">Text Speaker</h4>
                 <p className="text-chose-50">
-                The converts the written text into spoken words. Offers a simple yet powerful interface for text-to-speech functionality. 
+                  The converts the written text into spoken words. Offers a
+                  simple yet powerful interface for text-to-speech
+                  functionality.
                 </p>
               </div>
             </a>
@@ -213,7 +221,9 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">Weather Application</h4>
                 <p className="text-chose-50">
-                This shows the weather information and forecast of the current location. Designed to provide users with up-to-date weather information with. 
+                  This shows the weather information and forecast of the current
+                  location. Designed to provide users with up-to-date weather
+                  information with.
                 </p>
               </div>
             </a>
@@ -227,7 +237,9 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">Headphones</h4>
                 <p className="text-chose-50">
-                Our Headphones Landing Page showcases the latest in audio technology, combining sleek design with exceptional sound quality. 
+                  Our Headphones Landing Page showcases the latest in audio
+                  technology, combining sleek design with exceptional sound
+                  quality.
                 </p>
               </div>
             </a>
@@ -242,7 +254,9 @@ const main = forwardRef(() => {
                 </ul>
                 <h4 className="my-2 font-semibold">Weather </h4>
                 <p className="text-chose-50">
-                Users can search for weather information by city name. Auto-suggestions and autocomplete functionality enhance the search experience.
+                  Users can search for weather information by city name.
+                  Auto-suggestions and autocomplete functionality enhance the
+                  search experience.
                 </p>
               </div>
             </a>
