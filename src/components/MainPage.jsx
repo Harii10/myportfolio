@@ -60,7 +60,7 @@ const main = forwardRef(() => {
             </h1>
             <p className="font-extrabold tracking-wider text-2xl mt-4 lg:text-3xl">
               & I'm a{" "}
-              <span className="text-chose-10 text-2xl">
+              <span className="text-chose-10 text-2xl lg:text-3xl">
                 <Typewriter
                   words={[
                     "Front End Developer",
