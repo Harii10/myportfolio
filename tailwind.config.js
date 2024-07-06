@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       colors:{
         'chose':{
           10:'#2AD87F',

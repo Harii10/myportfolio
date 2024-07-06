@@ -11,6 +11,7 @@ import { GrMysql } from "react-icons/gr";
 import { SiBootstrap } from "react-icons/si";
 import Snackbar from "@mui/material/Snackbar";
 import emailjs from "@emailjs/browser";
+import { Typewriter, Cursor } from "react-simple-typewriter";
 
 const main = forwardRef(() => {
   const [sucess, setSucess] = useState(false);
@@ -53,10 +54,28 @@ const main = forwardRef(() => {
       <section id="home" className="section">
         <div className="flex flex-col-reverse -mt-8 lg:flex lg:flex-row justify-between lg:mt-6 ">
           <div className="p-7 lg:text-2xl lg:pl-24">
-            <h3 className="font-bold tracking-wider text-3xl">Hi, I am</h3>
-            <h1 className="font-extrabold tracking-wider text-2xl lg:text-4xl">
-              Hariharachandru V
+            <h3 className="font-bold tracking-wider text-2xl">Hi, I am</h3>
+            <h1 className="font-extrabold tracking-wider text-2xl mt-1 lg:text-4xl">
+              Hariharachandru
             </h1>
+            <p className="font-extrabold tracking-wider text-2xl mt-4 lg:text-3xl">
+              & I'm a{" "}
+              <span className="text-chose-10 text-2xl">
+                <Typewriter
+                  words={[
+                    "Front End Developer",
+                    "Web Developer",
+                    "React Developer",
+                  ]}
+                  loop={true}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </span>
+            </p>
             <p className="font-thin tracking-tighter leading-relaxed mt-5 text-chose-50 lg:mt-8">
               A skilled Front End Developer with a passion for crafting visually
               stunning and highly responsive user interfaces, passionate about
