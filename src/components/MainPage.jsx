@@ -51,7 +51,7 @@ const main = forwardRef(() => {
         <ScrollTop />
       </div>
       <section id="home" className="section">
-        <div className="flex flex-col-reverse mt-8 lg:flex lg:flex-row justify-between lg:mt-28 ">
+        <div className="flex flex-col-reverse -mt-8 lg:flex lg:flex-row justify-between lg:mt-6 ">
           <div className="p-7 lg:text-2xl lg:pl-24">
             <h3 className="font-bold tracking-wider text-3xl">Hi, I am</h3>
             <h1 className="font-extrabold tracking-wider text-2xl lg:text-4xl">
