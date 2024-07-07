@@ -196,7 +196,7 @@ const main = forwardRef(() => {
               </div>
             </a>
 
-            <a href="https://chandru070.github.io/task-3/">
+            <a href="https://harii10.github.io/todo/">
               <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
                 <img src="images/task.png" className="" />
                 <ul className="flex gap-5 my-3">
@@ -247,7 +247,7 @@ const main = forwardRef(() => {
               </div>
             </a>
 
-            <a href="https://chandru070.github.io/task-2/">
+            <a href="https://harii10.github.io/headphone/">
               <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
                 <img src="images/head.png" className="" />
                 <ul className="flex gap-5 my-3">
