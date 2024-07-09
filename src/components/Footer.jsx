@@ -17,13 +17,12 @@ function Footer() {
             <a href="#home"><li className="hover:text-chose-10">About</li></a>
             <a href="#skill"><li className="hover:text-chose-10">Skills</li></a>
             <a href="#projects"><li className="hover:text-chose-10">Projects</li></a>
-            <a href="#education"><li className="hover:text-chose-10">Education</li></a>
           </ul>
         </div>
         
         <div className='py-5'>
           <ul className='flex justify-center space-x-12'>
-            <a  href='tel:6379940593'><li className="hover:text-chose-10"><FaPhoneAlt /></li></a>
+            <a  href='tel:6379940593'><li className="hover:text-chose-10"><FaPhoneAlt/></li></a>
             <li className="hover:text-chose-10"><MdEmail /></li>
             <a href="https://www.linkedin.com/in/hariharachandru-front-end-developer/"><li className="hover:text-chose-10"><FaLinkedin /></li></a>
             <a href='https://wa.link/9ikyi4/'><li className="hover:text-chose-10"><FaWhatsapp/></li></a>
