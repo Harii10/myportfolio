@@ -279,6 +279,20 @@ const main = forwardRef(() => {
                 </p>
               </div>
             </a>
+            <a href="https://harii10.github.io/webdeveloper/">
+              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-1000 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-1000 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-1000 sm:m-3 2xl:hover:border-chose-10 md:m-3">
+                <img src="images/fyle.png" className="" />
+                <ul className="flex gap-5 my-3">
+                  <li className="text-chose-10 p-1 px-3">HTML</li>
+                  <li className="text-chose-10 p-1 px-3">CSS</li>
+                  <li className="text-chose-10 p-1 px-3">JavaScript</li>
+                </ul>
+                <h4 className="my-2 font-semibold">Productshowcase</h4>
+                <p className="text-chose-50">
+                  This is a product landing page, it showcases the products infos and the growths.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
