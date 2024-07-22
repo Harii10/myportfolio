@@ -12,6 +12,7 @@ import { SiBootstrap } from "react-icons/si";
 import Snackbar from "@mui/material/Snackbar";
 import emailjs from "@emailjs/browser";
 import { Typewriter, Cursor } from "react-simple-typewriter";
+import Projects from "./Projects";
 
 const main = forwardRef(() => {
   const [sucess, setSucess] = useState(false);
@@ -21,6 +22,86 @@ const main = forwardRef(() => {
     setSucess(true);
     setTimeout(() => setSucess(false), 5000);
   }
+
+  const projectsInfos = [
+    {
+      id: 1,
+      S1 : 'HTML',
+      S2 : 'CSS',
+      image : 'images/landing.png',
+      Title : 'Grooves',
+      Description : 'This is a ultimate destination for audiophiles and music enthusiasts. Combining sleek design with exceptional soundquality.',
+      url : 'https://harii10.github.io/landing-page/'
+
+    },
+    {
+      id: 2,
+      S1 : 'HTML',
+      S2 : 'CSS',
+      S3 : 'JavaScript',
+      image : 'images/task.png',
+      Title : 'To Do List',
+      Description : 'This app provides a clean and user-friendly interface for organizing your daily activities. It help you manage your tasks efficiently.',
+      url : 'https://harii10.github.io/todo/'
+
+    },
+    {
+      id: 3,
+      S1 : 'HTML',
+      S2 : 'CSS',
+      image : 'images/text-speaker.png',
+      Title : 'Text Speaker',
+      Description : 'The converts the written text into spoken words. Offers asimple yet powerful interface for text-to-speech functionality.',
+      url : 'https://hberlin07.github.io/Text-Speaker/'
+
+    },
+    {
+      id: 4,
+      S1 : 'React',
+      S2 : 'Tailwindcss',
+      S3 : 'API',
+      image : 'images/weather-i.png',
+      Title : 'Weather Application',
+      Description : 'This shows the weather information and forecast of the current location. Designed to provide users with up-to-date weather information with.',
+      url : "https://harii10.github.io/weather-app/"
+
+    },
+    {
+      id: 5,
+      S1 : 'HTML',
+      S2 : 'CSS',
+      image : 'images/head.png',
+      Title : 'Headphones',
+      Description : 'Our Headphones Landing Page showcases the latest in audio technology, combining sleek design with exceptional sound quality.',
+      url: "https://harii10.github.io/headphone/"
+    },
+    {
+      id: 6,
+      S1 : 'React',
+      S2 : 'Tailwindcss',
+      S3: 'API',
+      image : 'images/weather-2.png',
+      Title : 'Weather',
+      Description : 'Users can search for weather information by city name. Auto-suggestions and autocomplete functionality enhance the search experience.',
+      url: "https://denay.netlify.app/"
+    },
+    {
+      id: 7,
+      S1 : 'HTML',
+      S2 : 'CSS',
+      S3: 'JavaScript',
+      image : 'images/fyle.png',
+      Title : 'Productshowcase',
+      Description : 'This is a product landing page, it showcases the products infos and the growths.',
+      url: 'https://harii10.github.io/webdeveloper/'
+    }
+
+
+
+
+
+  ]
+  
 
   const formP = (e) => {
     e.preventDefault();
@@ -180,119 +261,18 @@ const main = forwardRef(() => {
             </p>
           </div>
           <div className="mt-5 sm:grid grid-rows-3 grid-flow-col w-full p-0 md:gap-5">
-            <a href="https://harii10.github.io/landing-page/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
-                <img src="images/landing.png" className="" />
-                <ul className="flex gap-5 my-3">
-                  <li className="text-chose-10 p-1 px-3">HTML</li>
-                  <li className="text-chose-10 p-1 px-3">CSS</li>
-                </ul>
-                <h4 className="my-2 font-semibold">Music Intruments</h4>
-                <p className="text-chose-50">
-                  This is a ultimate destination for audiophiles and music
-                  enthusiasts. Combining sleek design with exceptional sound
-                  quality.
-                </p>
-              </div>
-            </a>
-
-            <a href="https://harii10.github.io/todo/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
-                <img src="images/task.png" className="" />
-                <ul className="flex gap-5 my-3">
-                  <li className="text-chose-10 p-1 px-3">HTML</li>
-                  <li className="text-chose-10 p-1 px-3">CSS</li>
-                  <li className="text-chose-10 p-1 px-3">JavaScript</li>
-                </ul>
-                <h4 className="my-2 font-semibold">To DO List</h4>
-                <p className="text-chose-50">
-                  This app provides a clean and user-friendly interface for
-                  organizing your daily activities. It help you manage your
-                  tasks efficiently.
-                </p>
-              </div>
-            </a>
-
-            <a href="https://hberlin07.github.io/Text-Speaker/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
-                <img src="images/text-speaker.png" className="" />
-                <ul className="flex gap-5 my-3">
-                  <li className="text-chose-10 p-1 px-3">HTML</li>
-                  <li className="text-chose-10 p-1 px-3">CSS</li>
-                </ul>
-                <h4 className="my-2 font-semibold">Text Speaker</h4>
-                <p className="text-chose-50">
-                  The converts the written text into spoken words. Offers a
-                  simple yet powerful interface for text-to-speech
-                  functionality.
-                </p>
-              </div>
-            </a>
-
-            <a href="https://harii10.github.io/weather-app/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
-                <img src="images/weather-i.png" className="" />
-                <ul className="flex gap-5 my-3">
-                  <li className="text-chose-10 p-1 px-3">React</li>
-                  <li className="text-chose-10 p-1 px-3">Tailwindcss</li>
-                  <li className="text-chose-10 p-1 px-3">API</li>
-                  {/* <li className='border p-1 px-3'>Material UI</li> */}
-                </ul>
-                <h4 className="my-2 font-semibold">Weather Application</h4>
-                <p className="text-chose-50">
-                  This shows the weather information and forecast of the current
-                  location. Designed to provide users with up-to-date weather
-                  information with.
-                </p>
-              </div>
-            </a>
-
-            <a href="https://harii10.github.io/headphone/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
-                <img src="images/head.png" className="" />
-                <ul className="flex gap-5 my-3">
-                  <li className="text-chose-10 p-1 px-3">HTML</li>
-                  <li className="text-chose-10 p-1 px-3">CSS</li>
-                </ul>
-                <h4 className="my-2 font-semibold">Headphones</h4>
-                <p className="text-chose-50">
-                  Our Headphones Landing Page showcases the latest in audio
-                  technology, combining sleek design with exceptional sound
-                  quality.
-                </p>
-              </div>
-            </a>
-
-            <a href="https://denay.netlify.app/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-700 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-700 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-700 sm:m-3 2xl:hover:border-chose-10 md:m-3">
-                <img src="images/weather-2.png" className="" />
-                <ul className="flex gap-5 my-3">
-                  <li className="text-chose-10 p-1 px-3">React</li>
-                  <li className="text-chose-10 p-1 px-3">Tailwindcss</li>
-                  <li className="text-chose-10 p-1 px-3">API</li>
-                </ul>
-                <h4 className="my-2 font-semibold">Weather </h4>
-                <p className="text-chose-50">
-                  Users can search for weather information by city name.
-                  Auto-suggestions and autocomplete functionality enhance the
-                  search experience.
-                </p>
-              </div>
-            </a>
-            <a href="https://harii10.github.io/webdeveloper/">
-              <div className="w-fit p-5 border border-gray-700 m-5 rounded-xl bg-chose-30 lg:hover:scale-105 duration-1000 lg:hover:shadow-black lg:hover:shadow-2xl lg:hover:border-chose-10 xl:hover:shadow-black xl:hover:shadow-2xl xl:hover:scale-105 xl:duration-1000 xl:hover:border-chose-10 2xl:hover:shadow-black 2xl:hover:shadow-2xl 2xl:hover:scale-105 2xl:duration-1000 sm:m-3 2xl:hover:border-chose-10 md:m-3">
-                <img src="images/fyle.png" className="" />
-                <ul className="flex gap-5 my-3">
-                  <li className="text-chose-10 p-1 px-3">HTML</li>
-                  <li className="text-chose-10 p-1 px-3">CSS</li>
-                  <li className="text-chose-10 p-1 px-3">JavaScript</li>
-                </ul>
-                <h4 className="my-2 font-semibold">Productshowcase</h4>
-                <p className="text-chose-50">
-                  This is a product landing page, it showcases the products infos and the growths.
-                </p>
-              </div>
-            </a>
+            {projectsInfos.map((infos)=>(
+              <Projects
+                img={infos.image}
+                tech1={infos.S1}
+                tech2={infos.S2}
+                tech3={infos.S3}
+                heading={infos.Title}
+                about ={infos.Description}
+                link={infos.url}
+                key={infos.id}
+              />
+            ))}
           </div>
         </div>
       </section>
