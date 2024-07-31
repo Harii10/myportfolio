@@ -16,7 +16,7 @@ import Projects from "./Projects";
 
 const main = forwardRef(() => {
   const [sucess, setSucess] = useState(false);
-  const form = useRef();
+  const form = useRef()
 
   function successalert() {
     setSucess(true);
@@ -125,7 +125,7 @@ const main = forwardRef(() => {
     name.value = "";
     subject.value = "";
     textarea.value = "";
-  };
+  }
 
   return (
     <div>
@@ -176,7 +176,7 @@ const main = forwardRef(() => {
       </section>
 
       <div className="flex justify-center items-center lg:flex lg:justify-start p-3 lg:p-10 lg:pl-24 lg:-mt-9">
-        <a href="https://drive.google.com/file/d/1q98w2CLlPb_dIvb7DD11HWj7OS2XsNxl/view?usp=drive_link">
+        <a href="https://drive.google.com/file/d/1E0QHH-GJ6ih7N2ld9QYH_kO5NW6PoCo3/view?usp=drive_link">
           <button className="bg-chose-10 text-chose-20 rounded-lg font-bold text-xl p-3 lg:hover:bg-chose-20 hover:border border-chose-10 lg:hover:text-white xl:hover:bg-chose-20 xl:hover:border xl:border-chose-10 xl:hover:text-white 2xl:hover:bg-chose-20 2xl:hover:border 2xl:border-chose-10 2xl:hover:text-white">
             Check Resume
           </button>
