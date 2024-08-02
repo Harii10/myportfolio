@@ -12,6 +12,7 @@ import { SiBootstrap } from "react-icons/si";
 import Snackbar from "@mui/material/Snackbar";
 import emailjs from "@emailjs/browser";
 import { Typewriter, Cursor } from "react-simple-typewriter";
+import { BiLogoDjango } from "react-icons/bi";
 import Projects from "./Projects";
 
 const main = forwardRef(() => {
@@ -238,9 +239,9 @@ const main = forwardRef(() => {
                 </li>
                 <li className="flex justify-center items-center gap-1 border border-gray-500 mx-1 my-3 p-2 rounded-lg md:gap-3 lg:gap-5 lg:text-2xl">
                   <span>
-                    <SiBootstrap className="lg:w-7 h-7" />
+                    <BiLogoDjango className="lg:w-7 h-7" />
                   </span>
-                  <p>Strap</p>
+                  <p>Django</p>
                 </li>
               </ul>
             </div>
