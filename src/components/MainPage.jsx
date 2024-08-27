@@ -159,11 +159,7 @@ const main = forwardRef(() => {
               </span>
             </p>
             <p className="font-thin tracking-tighter leading-relaxed mt-5 text-chose-50 lg:mt-8">
-              A skilled Front End Developer with a passion for crafting visually
-              stunning and highly responsive user interfaces, passionate about
-              staying updated on frontend tech. I am actively seeking new
-              opportunities to apply my technical expertise and creativity to
-              contribute creativity and bring innovative ideas to life.
+            Passionate learner with a strong interest in startups and the tech field, constantly upgrading my skills in areas like DSA and Web development. I bring creativity and precision to the digital realm and make a meaningful impact through my work. I am actively seeking new opportunities to apply my technical expertise and creativity to contribute creativity and bring innovative ideas to life.
             </p>
           </div>
 
