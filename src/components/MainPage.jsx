@@ -2,18 +2,11 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import ScrollTop from "./ScroolTop";
 import { forwardRef } from "react";
-import { FaHtml5 } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io";
-import { IoLogoJavascript } from "react-icons/io5";
-import { TbBrandReact } from "react-icons/tb";
-import { SiTailwindcss } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
-import { SiBootstrap } from "react-icons/si";
 import Snackbar from "@mui/material/Snackbar";
 import emailjs from "@emailjs/browser";
 import { Typewriter, Cursor } from "react-simple-typewriter";
-import { BiLogoDjango } from "react-icons/bi";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 const main = forwardRef(() => {
   const [sucess, setSucess] = useState(false);
@@ -166,7 +159,7 @@ const main = forwardRef(() => {
           <div className="flex justify-center items-center w-lvw">
             <img
               src="images/hari.png"
-              className="h-52 w-52 ml-11 border-chose-10 border-4 lg:h-80 lg:w-80 mr-14 rounded-full bg-chose-60"
+              className="h-52 w-52 ml-11 border-chose-10 border-4 lg:h-72 lg:w-80 mr-14 rounded-full bg-chose-60"
             />
           </div>
         </div>
@@ -188,60 +181,8 @@ const main = forwardRef(() => {
               Here are some of my skills which I have Learnt
             </p>
           </div>
-          <div>
-            <div className="ml-1 w-full border border-chose-10 rounded-sm shadow-black shadow-2xl sm:w-full md:w-full md:m-2 lg:w-full m-6 lg:p-16">
-              <ul className="grid grid-rows-2 grid-flow-col gap-1 p-3 md:gap-3 lg:gap-0">
-                <li className="flex justify-center items-center gap-1 border border-gray-500 my-3 rounded-lg md:gap-3 lg:gap-5 lg:text-2xl">
-                  <span>
-                    <FaHtml5 className="lg:w-7 h-7" />
-                  </span>
-                  <p>HTML</p>
-                </li>
-                <li className="flex justify-center items-center gap-1 border border-gray-500 mx-1 my-3 p-1 rounded-lg ml-2 md:gap-3 lg:gap-5 lg:text-2xl">
-                  <span>
-                    <SiTailwindcss className="lg:w-7 h-7" />
-                  </span>
-                  <p>Tailwind</p>
-                </li>
-                <li className="flex justify-center items-center gap-1 border border-gray-500 mx-1 my-3 rounded-lg lg:gap-5 md:gap-3 lg:text-2xl">
-                  <span>
-                    <IoLogoCss3 className="lg:w-7 h-7" />
-                  </span>
-                  <p>CSS</p>
-                </li>
-                <li className="flex justify-center items-center gap-1 border border-gray-500 mx-1 my-3 p-1 rounded-lg ml-2 md:gap-3 lg:gap-5 lg:text-2xl">
-                  <span>
-                    <SiTailwindcss className="lg:w-7 h-7" />
-                  </span>
-                  <p>Python</p>
-                </li>
-                <li className="flex justify-center items-center gap-1 border border-gray-500 mx-1 my-3 rounded-lg lg:gap-5 md:gap-3 lg:text-2xl">
-                  <span>
-                    <IoLogoJavascript className="lg:w-7 h-7" />
-                  </span>
-                  <p>JS</p>
-                </li>
-                <li className="flex justify-center items-center gap-1 border border-gray-500 mx-1 my-3 p-1 rounded-lg ml-2 md:gap-3 lg:gap-5 lg:text-2xl">
-                  <span>
-                    <GrMysql className="lg:w-7 h-7" />
-                  </span>
-                  <p>SQL</p>
-                </li>
-                <li className="flex justify-center items-center gap-1 border border-gray-500 mx-1 my-3 p-2 rounded-lg md:gap-3 lg:gap-5 lg:text-2xl">
-                  <span>
-                    <TbBrandReact className="lg:w-7 h-7" />
-                  </span>
-                  <p>React</p>
-                </li>
-                <li className="flex justify-center items-center gap-1 border border-gray-500 mx-1 my-3 p-2 rounded-lg md:gap-3 lg:gap-5 lg:text-2xl">
-                  <span>
-                    <BiLogoDjango className="lg:w-7 h-7" />
-                  </span>
-                  <p>Django</p>
-                </li>
-              </ul>
-            </div>
-            <div></div>
+          <div className="m-2 p-2">
+            <Skills/>
           </div>
         </div>
       </section>
