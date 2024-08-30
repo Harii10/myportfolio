@@ -9,10 +9,9 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
 const Header = ({value, onChange}) => {
 
+  const [isScrolled, setIsScrolled] = useState(false)
   const [isNavVisible, setIsNavVisible] = useState(true)
   let scrollTop = 0
-
-
 
   useEffect(()=>{
     const handleScroll = () =>{
@@ -39,16 +38,31 @@ const Header = ({value, onChange}) => {
       window.addEventListener('remove', handleScroll)
     }
   },[])
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, [])
   
   return (
     <div>
-      <div className=" hidden md:block lg:flex justify-center items-center sticky top-0 border my-5 h-16 rounded-full">
+      <div className=" hidden md:block lg:block xl:block 2xl:block">
         {/* <ul className='flex gap-16 my-4'>
                 <li>About</li>
                 <li>Skills</li>
                 <li>Projects</li>
                 <li>Education</li>
             </ul> */}
+        <div className={`flex justify-center items-center border border-gray-300 my-5 h-16 rounded-full transition-all duration-100 ease-in ${
+          isScrolled
+            ? " fixed top-0 w-full bg-chose-20 shadow-2xl rounded-full border border-gray-300 my-0"
+            : "bg-transparent"
+        }`}>
         <Box sx={{ width: 400, color: "white"}} className='sticky top-0'>
           <BottomNavigation
             showLabels
@@ -82,6 +96,8 @@ const Header = ({value, onChange}) => {
             />
           </BottomNavigation>
         </Box>
+        </div>
+        
         
       </div>
 

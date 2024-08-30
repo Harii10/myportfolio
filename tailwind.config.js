@@ -12,7 +12,8 @@ export default {
           10:'#2AD87F',
           20:'#1E242B',
           50: '#B7BBBE',
-          60: '#D9DBDD'
+          60: '#D9DBDD',
+          70 : '#555558'
         }
       },
       margin: {

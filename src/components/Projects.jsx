@@ -12,7 +12,7 @@ function Projects({img, tech1, tech2, tech3, heading, about, link}) {
                   <li className="text-chose-10 p-1 px-3">{tech3}</li>
                 </ul>
                 <h4 className="my-2 font-semibold">{heading}</h4>
-                <p className="text-chose-50">
+                <p className="text-chose-50 ">
                   {about}
                 </p>
               </div>

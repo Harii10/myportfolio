@@ -88,6 +88,16 @@ const main = forwardRef(() => {
       Title : 'Productshowcase',
       Description : 'This is a product landing page, it showcases the products infos and the growths.',
       url: 'https://harii10.github.io/webdeveloper/'
+    },
+    {
+      id: 8,
+      S1 : 'React',
+      S2 : 'Django',
+      S3: 'MySQL',
+      image : 'images/data-visualization.png',
+      Title : 'Data Visualization',
+      Description : 'The project showcases various charts and graphs to represent complex data insights. Visually engaging dashboard, with data dynamically fetched from a MySQL database.',
+      url: 'https://harii10.github.io/data-visualization/'
     }
 
 
@@ -140,7 +150,7 @@ const main = forwardRef(() => {
                   words={[
                     "Front End Developer",
                     "Web Developer",
-                    "React Developer",
+                    "Full Stack Developer",
                   ]}
                   loop={true}
                   cursor
