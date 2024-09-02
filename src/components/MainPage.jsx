@@ -20,13 +20,13 @@ const main = forwardRef(() => {
   const projectsInfos = [
     {
       id: 1,
-      S1 : 'HTML',
-      S2 : 'CSS',
-      image : 'images/landing.png',
-      Title : 'Grooves',
-      Description : 'This is a ultimate destination for audiophiles and music enthusiasts. Combining sleek design with exceptional soundquality.',
-      url : 'https://harii10.github.io/landing-page/'
-
+      S1 : 'React',
+      S2 : 'Django',
+      S3: 'MySQL',
+      image : 'images/data-visualization.png',
+      Title : 'Data Visualization',
+      Description : 'The project showcases various charts and graphs to represent complex data insights. Visually engaging dashboard, with data dynamically fetched from a MySQL database.',
+      url: 'https://harii10.github.io/data-visualization/'
     },
     {
       id: 2,
@@ -37,18 +37,18 @@ const main = forwardRef(() => {
       Title : 'To Do List',
       Description : 'This app provides a clean and user-friendly interface for organizing your daily activities. It help you manage your tasks efficiently.',
       url : 'https://harii10.github.io/todo/'
-
     },
     {
       id: 3,
       S1 : 'HTML',
       S2 : 'CSS',
-      image : 'images/text-speaker.png',
-      Title : 'Text Speaker',
-      Description : 'The converts the written text into spoken words. Offers asimple yet powerful interface for text-to-speech functionality.',
-      url : 'https://hberlin07.github.io/Text-Speaker/'
+      image : 'images/landing.png',
+      Title : 'Grooves',
+      Description : 'This is a ultimate destination for audiophiles and music enthusiasts. Combining sleek design with exceptional soundquality.',
+      url : 'https://harii10.github.io/landing-page/'
 
     },
+    
     {
       id: 4,
       S1 : 'React',
@@ -89,17 +89,17 @@ const main = forwardRef(() => {
       Description : 'This is a product landing page, it showcases the products infos and the growths.',
       url: 'https://harii10.github.io/webdeveloper/'
     },
+    
     {
       id: 8,
-      S1 : 'React',
-      S2 : 'Django',
-      S3: 'MySQL',
-      image : 'images/data-visualization.png',
-      Title : 'Data Visualization',
-      Description : 'The project showcases various charts and graphs to represent complex data insights. Visually engaging dashboard, with data dynamically fetched from a MySQL database.',
-      url: 'https://harii10.github.io/data-visualization/'
-    }
+      S1 : 'HTML',
+      S2 : 'CSS',
+      image : 'images/text-speaker.png',
+      Title : 'Text Speaker',
+      Description : 'The converts the written text into spoken words. Offers asimple yet powerful interface for text-to-speech functionality.',
+      url : 'https://hberlin07.github.io/Text-Speaker/'
 
+    },
 
 
 
@@ -136,7 +136,7 @@ const main = forwardRef(() => {
       <div>
         <ScrollTop />
       </div>
-      <section id="home" className="section">
+      <section id="home" className="section" >
         <div className="flex flex-col-reverse -mt-8 lg:flex lg:flex-row justify-between lg:mt-6 ">
           <div className="p-7 lg:text-2xl lg:pl-24">
             <h3 className="font-bold tracking-wider text-2xl">Hi, I am</h3>
@@ -166,7 +166,7 @@ const main = forwardRef(() => {
             </p>
           </div>
 
-          <div className="flex justify-center items-center w-lvw">
+          <div className="flex justify-center items-center w-lvw" >
             <img
               src="images/hari.png"
               className="h-52 w-52 ml-11 border-chose-10 border-4 lg:h-72 lg:w-80 mr-14 rounded-full bg-chose-60"
