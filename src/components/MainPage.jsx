@@ -1,17 +1,22 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
-import ScrollTop from "./ScroolTop";
-import { forwardRef } from "react";
-import Snackbar from "@mui/material/Snackbar";
-import emailjs from "@emailjs/browser";
-import { Typewriter, Cursor } from "react-simple-typewriter";
-import Projects from "./Projects";
-import Skills from "./Skills";
+import { useState, useEffect, useRef } from "react"
+import ScrollTop from "./ScroolTop"
+import { forwardRef } from "react"
+import Snackbar from "@mui/material/Snackbar"
+import emailjs from "@emailjs/browser"
+import { Typewriter, Cursor } from "react-simple-typewriter"
+import Projects from "./Projects"
+import Skills from "./Skills"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const main = forwardRef(() => {
   const [sucess, setSucess] = useState(false);
   const form = useRef()
 
+  useEffect(()=>{
+    AOS.init()
+  }, [])
   function successalert() {
     setSucess(true);
     setTimeout(() => setSucess(false), 5000);
@@ -138,7 +143,7 @@ const main = forwardRef(() => {
       </div>
       <section id="home" className="section" >
         <div className="flex flex-col-reverse -mt-8 lg:flex lg:flex-row justify-between lg:mt-6 ">
-          <div className="p-7 lg:text-2xl lg:pl-24">
+          <div className="p-7 lg:text-2xl lg:pl-24" data-aos="fade-down" data-aos-duration="1000">
             <h3 className="font-bold tracking-wider text-2xl">Hi, I am</h3>
             <h1 className="font-extrabold tracking-wider text-2xl mt-1 lg:text-4xl">
               Hariharachandru
@@ -168,6 +173,8 @@ const main = forwardRef(() => {
 
           <div className="flex justify-center items-center w-lvw" >
             <img
+            data-aos="fade-up"
+            data-aos-duration="1000"
               src="images/hari.png"
               className="h-52 w-52 ml-11 border-chose-10 border-4 lg:h-72 lg:w-80 mr-14 rounded-full bg-chose-60"
             />
@@ -186,12 +193,12 @@ const main = forwardRef(() => {
       <section className="section" id="skill">
         <div className=" section mt-24 lg:mt-32 lg:p-10">
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-semibold tracking-wider text-4xl">Skills</h1>
-            <p className="font-light m-3 mt-5 text-chose-50 lg:text-xl">
+            <h1 className="font-semibold tracking-wider text-4xl" data-aos="fade-up" data-aos-duration="1000">Skills</h1>
+            <p className="font-light m-3 mt-5 text-chose-50 lg:text-xl" data-aos="fade-down" data-aos-duration="1000">
               Here are some of my skills which I have Learnt
             </p>
           </div>
-          <div className="m-2 p-2">
+          <div className="m-2 p-2" data-aos="fade-down-right" data-aos-duration="1000">
             <Skills/>
           </div>
         </div>
@@ -200,12 +207,12 @@ const main = forwardRef(() => {
       <section id="projects" className="section">
         <div className="mt-24 lg:mt-32 lg:p-10">
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-semibold tracking-wider text-4xl">Projects</h1>
-            <p className="flex font-light m-3 mt-5 text-chose-50 lg:text-xl">
+            <h1 className="font-semibold tracking-wider text-4xl" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+            <p className="flex font-light m-3 mt-5 text-chose-50 lg:text-xl" data-aos="fade-down" data-aos-duration="1000">
               <span className="hidden md:block lg:block xl:block 2xl:block">
-                I Worked on a wide range of projects,
+                I Worked on a wide range of projects, 
               </span>{" "}
-              Here are some of my projects.
+               Here are some of my projects.
             </p>
           </div>
           <div className="mt-5 sm:grid grid-rows-3 grid-flow-col w-full p-0 md:gap-5">
@@ -225,10 +232,10 @@ const main = forwardRef(() => {
         </div>
       </section>
       <section className="mt-20 lg:mt-32 lg:p-10" id="contact">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center" data-aos="fade-up" data-aos-duration="1000">
           <h1 className="font-semibold tracking-wider text-4xl">Contact Me</h1>
         </div>
-        <div className="m-5 p-7 bg-chose-20 shadow-black shadow-2xl  rounded-md sm:m-11 md:mx-36 mt-8 2xl:mx-72 2xl:p-9">
+        <div className="m-5 p-7 bg-chose-20 shadow-black shadow-2xl  rounded-md sm:m-11 md:mx-36 mt-8 2xl:mx-72 2xl:p-9" data-aos="zoom-in-left" data-aos-duration="1000">
           <h3 className="font-medium text-lg">Email Me</h3>
           <form ref={form} onSubmit={formP}>
             <div>

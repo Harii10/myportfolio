@@ -13,6 +13,7 @@ const Header = ({value, onChange}) => {
   const [isNavVisible, setIsNavVisible] = useState(true)
   let scrollTop = 0
 
+  // For Mobile view Header
   useEffect(()=>{
     const handleScroll = () =>{
       const currentScrollTop = window.scrollY
@@ -23,9 +24,6 @@ const Header = ({value, onChange}) => {
       else{
         setIsNavVisible(true)
       }
-
-      lastScrollTop = currentScrollTop
-      
       clearTimeout(window.hideNavTimmeout)
       window.hideNavTimmeout = setTimeout(()=>{
         setIsNavVisible(true)
@@ -38,16 +36,7 @@ const Header = ({value, onChange}) => {
       window.addEventListener('remove', handleScroll)
     }
   },[])
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, [])
+
   
   return (
     <div>
