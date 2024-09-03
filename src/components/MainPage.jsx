@@ -182,9 +182,9 @@ const main = forwardRef(() => {
         </div>
       </section>
 
-      <div className="flex justify-center items-center lg:flex lg:justify-start p-3 lg:p-10 lg:pl-24 lg:-mt-9">
-        <a href="https://drive.google.com/file/d/1E0QHH-GJ6ih7N2ld9QYH_kO5NW6PoCo3/view?usp=drive_link">
-          <button className="bg-chose-10 text-chose-20 rounded-lg font-bold text-xl p-3 lg:hover:bg-chose-20 hover:border border-chose-10 lg:hover:text-white xl:hover:bg-chose-20 xl:hover:border xl:border-chose-10 xl:hover:text-white 2xl:hover:bg-chose-20 2xl:hover:border 2xl:border-chose-10 2xl:hover:text-white">
+      <div className="flex justify-center items-center lg:flex lg:justify-start p-3 lg:p-10 lg:pl-24 lg:-mt-9" >
+        <a href="https://drive.google.com/file/d/1N8dLc7WXEE59q2YxAa1MPRn5193a23u2/view?usp=sharing">
+          <button className="bg-chose-10 text-chose-20 rounded-lg font-bold text-xl p-3 lg:hover:bg-chose-20 hover:border border-chose-10 lg:hover:text-white xl:hover:bg-chose-20 xl:hover:border xl:border-chose-10 xl:hover:text-white 2xl:hover:bg-chose-20 2xl:hover:border 2xl:border-chose-10 2xl:hover:text-white" data-aos="fade-left" data-aos-duration="1000">
             Check Resume
           </button>
         </a>
