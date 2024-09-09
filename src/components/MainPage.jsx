@@ -176,7 +176,7 @@ const main = forwardRef(() => {
             data-aos="fade-up"
             data-aos-duration="1000"
               src="images/hari.png"
-              className="h-52 w-52 ml-11 border-chose-10 border-4 lg:h-72 lg:w-80 mr-14 rounded-full bg-chose-60"
+              className="h-52 w-52 ml-11 border-chose-10 border-4 lg:h-80 lg:w-80 mr-14 rounded-full bg-chose-60"
             />
           </div>
         </div>
