@@ -9,10 +9,8 @@ import Projects from "./Projects"
 import Skills from "./Skills"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useScroll, motion } from 'framer-motion'
 
 const main = forwardRef(() => {
-  const { scrollYProgress } = useScroll()
   const [sucess, setSucess] = useState(false)
   const form = useRef()
 
