@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { FaPhoneAlt, FaLinkedin, FaWhatsapp, FaGithub} from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import React, { useState } from "react"
+import { FaPhoneAlt, FaLinkedin, FaWhatsapp, FaGithub} from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
 
 
 function Footer() {

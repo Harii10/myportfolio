@@ -9,9 +9,11 @@ import Projects from "./Projects"
 import Skills from "./Skills"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { useScroll, motion } from 'framer-motion'
 
 const main = forwardRef(() => {
-  const [sucess, setSucess] = useState(false);
+  const { scrollYProgress } = useScroll()
+  const [sucess, setSucess] = useState(false)
   const form = useRef()
 
   useEffect(()=>{
@@ -280,7 +282,7 @@ const main = forwardRef(() => {
         </div>
       </section>
     </div>
-  );
-});
+  )
+})
 
-export default main;
+export default main

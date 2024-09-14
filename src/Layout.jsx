@@ -5,23 +5,19 @@ import Footer from "./components/Footer";
 import MainPage from "./components/MainPage";
 
 function Layout() {
-  const [val, setVal] = useState('home');
+  const [val, setVal] = useState("home");
 
   const handleNavigationChange = (event, newValue) => {
-    setVal(newValue)
-  }
+    setVal(newValue);
+  };
 
-return (
+  return (
     <div className="overflow-x-hidden">
-      <Header
-      value={val} 
-      onChange={handleNavigationChange} />
-      <MainPage
-    
-      />
+      <Header value={val} onChange={handleNavigationChange} />
+      <MainPage />
       <Footer />
     </div>
-)
+  );
 }
 
 export default Layout;

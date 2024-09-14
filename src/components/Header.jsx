@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import Box from "@mui/material/Box";
-import BottomNavigation from "@mui/material/BottomNavigation";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import HomeIcon from "@mui/icons-material/Home";
-import CodeIcon from "@mui/icons-material/Code";
-import GridViewIcon from "@mui/icons-material/GridView";
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import React, { useEffect, useState } from "react"
+import Box from "@mui/material/Box"
+import BottomNavigation from "@mui/material/BottomNavigation"
+import BottomNavigationAction from "@mui/material/BottomNavigationAction"
+import HomeIcon from "@mui/icons-material/Home"
+import CodeIcon from "@mui/icons-material/Code"
+import GridViewIcon from "@mui/icons-material/GridView"
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
 
 const Header = ({value, onChange}) => {
-
+  
   const [isScrolled, setIsScrolled] = useState(false)
   const [isNavVisible, setIsNavVisible] = useState(true)
   let scrollTop = 0
@@ -49,13 +49,13 @@ const Header = ({value, onChange}) => {
             </ul> */}
         <div className={`flex justify-center items-center border border-gray-300 my-5 h-16 rounded-full transition-all duration-100 ease-in ${
           isScrolled
-            ? " fixed top-0 w-full bg-chose-20 shadow-2xl rounded-full border border-gray-300 my-0"
+            ? " fixed top-0 w-full bg-black shadow-2xl rounded-full border border-gray-300 my-0"
             : "bg-transparent"
         }`}>
         <Box sx={{ width: 400, color: "white"}} className='sticky top-0'>
           <BottomNavigation
             showLabels
-            sx={{ backgroundColor: '#1E242B'}}
+            sx={{ backgroundColor: 'black'}}
           >
             <BottomNavigationAction
               label="About"   
