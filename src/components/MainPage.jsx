@@ -167,7 +167,7 @@ const main = forwardRef(() => {
               </span>
             </p>
             <p className="font-thin tracking-tighter leading-relaxed mt-5 text-chose-50 lg:mt-8">
-            I am a dedicated and passionate IT graduate with a BTech in Information Technology, equipped with hands-on experience in diverse tech projects. My academic journey and project work have given me a strong foundation in web development. I've developed multiple projects, including responsive web applications, data visualization tools. I've developed multiple projects, including responsive web applications, data visualization tools.
+            I'm a dedicated and passionate IT graduate with a BTech in Information Technology, equipped with hands-on experience in diverse tech projects. My academic journey and project work have given me a strong foundation in web development. I've developed multiple projects, including responsive web applications, data visualization tools. I've developed multiple projects, including responsive web applications, data visualization tools.
             </p>
           </div>
 
