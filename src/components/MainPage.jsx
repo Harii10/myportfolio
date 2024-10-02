@@ -171,12 +171,12 @@ const main = forwardRef(() => {
             </p>
           </div>
 
-          <div className="flex justify-center items-center w-lvw" >
+          <div className="flex justify-center items-center w-lvw rounded-full" >
             <img
             data-aos="fade-up"
             data-aos-duration="1000"
               src="images/hari.png"
-              className="h-52 w-52 ml-11 border-chose-10 border-4 lg:h-80 lg:w-80 mr-14 rounded-full bg-chose-60"
+              className="h-56 w-56 ml-2 bg-chose-50 border-4 rounded-full lg:h-80 lg:w-80 lg:mr-7 lg:mb-12 border-chose-10"
             />
           </div>
         </div>
