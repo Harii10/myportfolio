@@ -110,7 +110,7 @@ const Header = ({value, onChange}) => {
   
 
       <div className={`fixed bottom-0 w-full lg:hidden text-white transition-transform transform ${isNavVisible ? 'block' : 'hidden'}`} id="bottomNav">
-        <Box sx={{ color: "white" }}>
+        <Box sx={{ color: "white"}}>
           <BottomNavigation
             showLabels
             value={value}
@@ -138,8 +138,7 @@ const Header = ({value, onChange}) => {
               icon={<AlternateEmailIcon/>}
               sx={{ backgroundColor: "#000000", color: "#ffff" }}
               href='#contact'
-            />
-            
+            />   
           </BottomNavigation>
         </Box>
         

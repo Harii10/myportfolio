@@ -7,7 +7,7 @@ import MainPage from "./components/MainPage";
 function Layout() {
   const [val, setVal] = useState("home");
 
-  const handleNavigationChange = (event, newValue) => {
+  const handleNavigationChange = (newValue) => {
     setVal(newValue);
   };
 

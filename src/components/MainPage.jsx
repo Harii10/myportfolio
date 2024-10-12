@@ -105,10 +105,17 @@ const main = forwardRef(() => {
       url : 'https://hberlin07.github.io/Text-Speaker/'
 
     },
-
-
-
-
+    {
+      id: 9,
+      // S1 : 'React',
+      // S2 : 'Tailwind',
+      // S3: 'API',
+      S1: 'In-Progress........',
+      image : 'images/music.png',
+      Title : 'Music Player',
+      Description : 'In-Progress...',
+      url : 'https://harii10.github.io/sounds/'
+    }
   ]
   
 
