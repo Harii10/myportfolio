@@ -9,14 +9,33 @@ import Projects from "./Projects"
 import Skills from "./Skills"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import SocialIcons from "./SocialIcons";
 
 const main = forwardRef(() => {
   const [sucess, setSucess] = useState(false)
+  const [showElement, setShowElement] = useState(false)
   const form = useRef()
 
+const handleScroll = () =>{
+  if(window.scrollY > 500){
+    setShowElement(true)
+  }
+  else{
+    setShowElement(false)
+  }
+}
+
+useEffect(()=>{
+  window.addEventListener('scroll', handleScroll)
+
+  return ()=>{
+    window.removeEventListener('scroll', handleScroll)
+  }
+},[])
   useEffect(()=>{
     AOS.init()
   }, [])
+
   function successalert() {
     setSucess(true);
     setTimeout(() => setSucess(false), 5000);
@@ -148,6 +167,12 @@ const main = forwardRef(() => {
       <div>
         <ScrollTop />
       </div>
+      {showElement && (
+        <div className="hidden xl:block 2xl:block lg:block fixed" id="icons">
+        <SocialIcons/>
+      </div>
+      )}
+      
       <section id="home" className="section" >
         <div className="flex flex-col-reverse -mt-8 lg:flex lg:flex-row justify-between lg:mt-6 ">
           <div className="p-7 lg:text-2xl lg:pl-24" data-aos="fade-down" data-aos-duration="1000">
