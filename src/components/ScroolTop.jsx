@@ -1,63 +1,41 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import CssBaseline from '@mui/material/CssBaseline';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Fab from '@mui/material/Fab';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Fade from '@mui/material/Fade';
+import React from 'react'
+import { useState, useEffect } from 'react';
+import { IoIosArrowUp } from "react-icons/io";
 
-function ScrollTop(props) {
-  const { children, window } = props;
-  const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
-    disableHysteresis: true,
-    threshold: 100,
-  });
-
-  const handleClick = (event) => {
-    const anchor = (event.target.ownerDocument || document).querySelector(
-      '#back-to-top-anchor',
-    );
-
-    if (anchor) {
-      anchor.scrollIntoView({
-        block: 'center',
-      });
+function ScroolTop() {
+  const [isVisible, setIsVisible] = useState(false);
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
     }
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
   return (
-    <Fade in={trigger}>
-      <Box
-        onClick={handleClick}
-        role="presentation"
-        sx={{ position: 'fixed', bottom: 90, right: 16 }}
-      >
-        {children}
-      </Box>
-    </Fade>
+    <div>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-14 right-4 bg-gray-300 text-black px-4 p-4 rounded-full shadow-lg transition duration-300 hover:bg-chose-10"
+        >
+          <IoIosArrowUp/>
+        </button>
+      )}
+    </div>
   )
 }
 
-ScrollTop.propTypes = {
-  children: PropTypes.element.isRequired,
-  window: PropTypes.func,
-};
-
-export default function BackToTop(props) {
-  return (
-    <React.Fragment>
-      <Toolbar id="back-to-top-anchor" />
-      <ScrollTop {...props}>
-        <Fab size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollTop>
-    </React.Fragment>
-  );
-}
+export default ScroolTop

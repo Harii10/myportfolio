@@ -41,12 +41,6 @@ const Header = ({value, onChange}) => {
   return (
     <div>
       <div className=" hidden md:block lg:block xl:block 2xl:block">
-        {/* <ul className='flex gap-16 my-4'>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Education</li>
-            </ul> */}
         <div className={`flex justify-center items-center border border-gray-300 my-5 h-16 rounded-full transition-all duration-100 ease-in ${
           isScrolled
             ? " fixed top-0 w-full bg-black shadow-2xl rounded-full border border-gray-300 my-0"
@@ -62,7 +56,6 @@ const Header = ({value, onChange}) => {
               value="home"
               sx={{ color: "#ffff" }}
               href="#home"
-              
             />
             <BottomNavigationAction
               label="Skills"
