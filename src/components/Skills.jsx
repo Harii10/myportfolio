@@ -58,9 +58,9 @@ function Skills() {
   // ]
   return (
     <div>
-      <div className="relative flex h-full transform items-end border-2 border-chose-10 bg-transparent p-2">
+      <div className="relative flex h-full transform items-end border border-chose-10 bg-transparent p-2">
         <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-          <ul className="grid grid-rows-2 grid-flow-col gap-x-12 -ml-5 md:gap-x-28 lg:gap-x-28 xl:gap-x-44 2xl:gap-x-14">
+          <ul className="grid grid-rows-2 grid-flow-col gap-x-7 -ml-5 md:gap-x-28 lg:gap-x-28 xl:gap-x-44 2xl:gap-x-14">
             {/* {skillsets.map((skill)=>{ */}
             <li className="flex justify-center items-center gap-1 border border-gray-500 mx-1 my-3 p-1 rounded-lg ml-2 w-12 md:w-20 lg:gap-2 lg:w-32 lg:text-2xl xl:w-44 2xl:w-72">
               <span>

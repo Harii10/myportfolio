@@ -19,6 +19,9 @@ export default {
       margin: {
         '22': '530px'
       },
+      width:{
+        '81': '900px'
+      }
     },
   },
   plugins: [],
