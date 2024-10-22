@@ -133,7 +133,6 @@ useEffect(()=>{
       image : 'images/music.png',
       Title : 'Music Player',
       Description : 'In-Progress...',
-      url : 'https://harii10.github.io/sounds/'
     }
   ]
   
