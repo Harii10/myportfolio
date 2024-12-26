@@ -83,7 +83,7 @@ const main = forwardRef(() => {
       image: "images/weather-i.png",
       Title: "Weather Application",
       Description:
-        "This shows the weather information and forecast of the current location. Designed to provide users with up-to-date weather information with.",
+        "This shows the weather information and forecast of the current location. Designed to provide users with up-to-date weather information.",
       url: "https://harii10.github.io/weather-app/",
     },
     {
@@ -129,15 +129,25 @@ const main = forwardRef(() => {
         "The converts the written text into spoken words. Offers asimple yet powerful interface for text-to-speech functionality.",
       url: "https://hberlin07.github.io/Text-Speaker/",
     },
+    // {
+    //   id: 9,
+    //   // S1 : 'React',
+    //   // S2 : 'Tailwind',
+    //   // S3: 'API',
+    //   S1: "In-Progress........",
+    //   image: "images/music.png",
+    //   Title: "Music Player",
+    //   Description: "In-Progress...",
+    // },
     {
       id: 9,
-      // S1 : 'React',
-      // S2 : 'Tailwind',
-      // S3: 'API',
-      S1: "In-Progress........",
-      image: "images/music.png",
-      Title: "Music Player",
-      Description: "In-Progress...",
+      S1 : 'React',
+      S2 : 'Tailwind',
+      S3: 'API',
+      image: "images/q_generator.png",
+      Title: "Quote Generator",
+      Description: "A simple web application that displays random quotes to inspire. It fetches quotes from an API and dynamically updates the content.",
+      url : "https://harii10.github.io/q_generator/"
     },
   ];
 
