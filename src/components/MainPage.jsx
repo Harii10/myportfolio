@@ -189,7 +189,7 @@ const main = forwardRef(() => {
       )}
 
       <section id="home" className="section">
-        <div className="flex flex-col-reverse mt-2 lg:flex lg:flex-row justify-between lg:mt-6 ">
+        <div className="flex flex-col-reverse mt-2 lg:flex lg:flex-row justify-between lg:mt-20 ">
           <div
             className="p-7 lg:text-2xl lg:pl-24"
             data-aos="fade-down"

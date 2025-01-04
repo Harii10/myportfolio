@@ -51,6 +51,26 @@ function Certifiactions() {
                 </div>
               </a>
             </li>
+            <li className="border border-chose-10 bg-transparent rounded-lg p-2 md:w-81"
+            data-aos="fade-down-left"
+            data-aos-duration="1000"
+            >
+              <a href="https://www.freecodecamp.org/certification/Hariharachandru/front-end-development-librariess">
+                <div className="flex gap-3">
+                  <span className="mt-2">
+                    <Avatar
+                      alt="Remy Sharp"
+                      src={freecode}
+                      className="bg-black p-2"
+                    />
+                  </span>
+                  <p className="md:mt-3">Front End Development Libraries</p>
+                </div>
+                <div className="flex gap-2 ml-14 mt-1">
+                  <p>freeCodeCamp</p>
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
