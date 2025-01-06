@@ -129,16 +129,15 @@ const main = forwardRef(() => {
         "The converts the written text into spoken words. Offers asimple yet powerful interface for text-to-speech functionality.",
       url: "https://hberlin07.github.io/Text-Speaker/",
     },
-    // {
-    //   id: 9,
-    //   // S1 : 'React',
-    //   // S2 : 'Tailwind',
-    //   // S3: 'API',
-    //   S1: "In-Progress........",
-    //   image: "images/music.png",
-    //   Title: "Music Player",
-    //   Description: "In-Progress...",
-    // },
+    {
+      id: 9,
+      S1 : 'React',
+      S2 : 'Tailwind',
+      image: "images/markdown.png",
+      Title: "Markdown Previewer",
+      Description: "This is a simple tool that converts Markdown syntax into formatted HTML, providing a live preview of the styled content. It helps users easily visualize and edit Markdown for blogs, documentation.",
+      url : "https://harii10.github.io/markdown-previewer/"
+    },
     {
       id: 9,
       S1 : 'React',
@@ -314,7 +313,7 @@ const main = forwardRef(() => {
               Here are some of my projects.
             </p>
           </div>
-          <div className="mt-5 sm:grid grid-rows-3 grid-flow-col w-full p-0 md:gap-5">
+          <div className="mt-5 sm:grid grid-rows-5 grid-flow-col w-full p-0 md:gap-5">
             {projectsInfos.map((infos) => (
               <Projects
                 img={infos.image}
