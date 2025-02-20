@@ -55,7 +55,7 @@ function Certifiactions() {
             data-aos="fade-down-left"
             data-aos-duration="1000"
             >
-              <a href="https://www.freecodecamp.org/certification/Hariharachandru/front-end-development-librariess">
+              <a href="https://www.freecodecamp.org/certification/Hariharachandru/front-end-development-libraries">
                 <div className="flex gap-3">
                   <span className="mt-2">
                     <Avatar
