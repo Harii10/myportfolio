@@ -47,6 +47,17 @@ const main = forwardRef(() => {
       S1: "React",
       S2: "Django",
       S3: "MySQL",
+      image: "images/Sounds.png",
+      Title: "Music Player",
+      Description:
+        "The project features a visually appealing music player interface explore songs dynamically. The data is fetched dynamically from a MySQL database using Django APIs, ensuring real-time updates and smooth user interaction.",
+      url: "https://harii10.github.io/sounds/",
+    },
+    {
+      id: 2,
+      S1: "React",
+      S2: "Django",
+      S3: "MySQL",
       image: "images/data-visualization.png",
       Title: "Data Visualization",
       Description:
@@ -313,7 +324,7 @@ const main = forwardRef(() => {
               Here are some of my projects.
             </p>
           </div>
-          <div className="mt-5 sm:grid grid-rows-5 grid-flow-col w-full p-0 md:gap-5">
+          <div className="mt-5 sm:grid grid-rows-4 grid-flow-col w-full p-0 md:gap-5">
             {projectsInfos.map((infos) => (
               <Projects
                 img={infos.image}
