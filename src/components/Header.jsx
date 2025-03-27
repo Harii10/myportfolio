@@ -9,40 +9,33 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
 
 const Header = ({value, onChange}) => {
   
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isNavVisible, setIsNavVisible] = useState(true)
-  let scrollTop = 0
+  const [showNav, setShowNav] = useState(true);
+  let lastScrollY = window.scrollY;
 
-  // For Mobile view Header
-  useEffect(()=>{
-    const handleScroll = () =>{
-      const currentScrollTop = window.scrollY
-
-      if(currentScrollTop > scrollTop){
-        setIsNavVisible(false)
+  useEffect(() => {
+    const handleScroll = () => {
+      // Hide when scrolling down, show when scrolling up or stopped
+      if (window.scrollY > lastScrollY) {
+        setShowNav(false); // Hide nav on scroll down
+      } else {
+        setShowNav(true); // Show nav when scroll stops
       }
-      else{
-        setIsNavVisible(true)
-      }
-      clearTimeout(window.hideNavTimmeout)
-      window.hideNavTimmeout = setTimeout(()=>{
-        setIsNavVisible(true)
-      }, 100)
-    }
+      lastScrollY = window.scrollY;
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    // Add scroll listener
+    window.addEventListener("scroll", handleScroll);
 
-    return()=>{
-      window.addEventListener('remove', handleScroll)
-    }
-  },[])
+    // Clean up listener
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   
   return (
     <div>
       <div className=" hidden md:block lg:block xl:block 2xl:block">
         <div className={`flex justify-center items-center border border-gray-300 my-5 h-16 rounded-full transition-all duration-100 ease-in ${
-          isScrolled
+          showNav
             ? " fixed top-0 w-full bg-black shadow-2xl rounded-full border border-gray-300 my-0"
             : "bg-transparent"
         }`}>
@@ -102,7 +95,11 @@ const Header = ({value, onChange}) => {
 
   
 
-      <div className={`fixed bottom-0 w-full lg:hidden text-white transition-transform transform ${isNavVisible ? 'block' : 'hidden'}`} id="bottomNav">
+  <div
+      className={`fixed inset-x-0 bottom-0 w-full text-white h-11 bg-black shadow-lg z-[100] transition-transform duration-300 lg:hidden ${
+        showNav ? "translate-y-0" : "translate-y-full"
+      }`}
+    >
         <Box sx={{ color: "white"}}>
           <BottomNavigation
             showLabels

@@ -29,7 +29,7 @@ function ScroolTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-14 right-4 bg-gray-300 text-black px-4 p-4 rounded-full shadow-lg transition duration-300 hover:bg-chose-10"
+          className="fixed bottom-14 right-4 bg-gray-300 text-black px-4 p-4 rounded-full z-[100] shadow-lg transition duration-300 hover:bg-chose-10"
         >
           <IoIosArrowUp/>
         </button>
