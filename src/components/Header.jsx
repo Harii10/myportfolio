@@ -34,11 +34,7 @@ const Header = ({value, onChange}) => {
   return (
     <div>
       <div className=" hidden md:block lg:block xl:block 2xl:block">
-        <div className={`flex justify-center items-center border border-gray-300 my-5 h-16 rounded-full transition-all duration-100 ease-in ${
-          showNav
-            ? " fixed top-0 w-full bg-black shadow-2xl rounded-full border border-gray-300 my-0"
-            : "bg-transparent"
-        }`}>
+        <div className={`flex justify-center items-center fixed inset-x-0 top-0 w-full text-white h-16 bg-black shadow-lg z-[100] transition-transform duration-300 p-5 border border-gray-500 rounded-full`}>
         <Box sx={{ width: 400, color: "white"}} className='sticky top-0'>
           <BottomNavigation
             showLabels

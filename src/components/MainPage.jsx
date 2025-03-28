@@ -191,7 +191,7 @@ const main = forwardRef(() => {
         <ScrollTop />
       </div>
       {showElement && (
-        <div className="hidden xl:block 2xl:block lg:block fixed" id="icons"
+        <div className="hidden xl:block 2xl:block lg:block fixed mt-28" id="icons"
         data-aos="fade-right"
         data-aos-duration="1000">
           <SocialIcons />
